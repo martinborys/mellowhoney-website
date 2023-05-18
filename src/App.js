@@ -5,32 +5,21 @@ import Music from "./pages/Music/Music";
 import Concerts from "./pages/Concerts/Concerts";
 import Merch from "./pages/Merch/Merch";
 import Photos from "./pages/Photos/Photos";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = Home;
-      break;
-    case "/Music":
-      Component = Music;
-      break;
-    case "/Concerts":
-      Component = Concerts;
-      break;
-    case "/Merch":
-      Component = Merch;
-      break;
-    case "/Photos":
-      Component = Photos;
-      break;
-    default:
-      break;
-  }
   return (
     <>
       <Navbar />
-      <Component />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Music" element={<Music />} />
+          <Route path="/Concerts" element={<Concerts />} />
+          <Route path="/Merch" element={<Merch />} />
+          <Route path="/Photos" element={<Photos />} />
+        </Routes>
+      </div>
     </>
   );
 }

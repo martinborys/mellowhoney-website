@@ -12,9 +12,6 @@ export default function Card({ onClick }) {
       <div className="card-back">
         <img src={sbdback} alt="Sentimental by Design back cover" />
       </div>
-      <h4>
-        <b>Sentimental by Design</b>
-      </h4>
     </div>
   );
 }
