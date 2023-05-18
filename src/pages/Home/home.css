@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 .container {
   margin: 1rem;
   text-align: center;
@@ -19,6 +15,12 @@ body {
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 80px;
 }
 
 .site-title {
@@ -48,4 +50,13 @@ body {
 
 .nav li:hover {
   background-color: #777;
+}
+
+.homepage {
+  background-image: url("../../assets/battle2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100vh;
+  filter: grayscale(1) opacity(.7);
 }

@@ -1,9 +1,16 @@
 import "./home.css";
+import "../../assets/GamerBold.ttf";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Navbar() {
+  const styles = {
+    customFont: {
+      fontFamily: "GamerBold",
+    },
+  };
+
   return (
-    <nav className="nav">
+    <nav className="nav" style={styles.customFont}>
       <Link to="/" className="site-title">
         Mellow Honey
       </Link>

@@ -1,19 +1,18 @@
 import "./flippableCard.css";
-import Card from "./Card";
-import { CSSTransition } from "react-transition-group";
-import { useState } from "react";
 
-export default function FlippableCard() {
-  const [showFront, setShowFront] = useState(true);
+export default function FlippableCard({ imageFront, imageBack, albumName }) {
   return (
-    <div className="flippable-card-container">
-      <CSSTransition in={showFront} timeout={300} classNames="flip">
-        <Card
-          onClick={() => {
-            setShowFront((v) => !v);
-          }}
-        />
-      </CSSTransition>
-    </div>
+    <>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src={require("../../assets/" + imageFront)} alt={albumName} />
+          </div>
+          <div class="flip-card-back">
+            <img src={require("../../assets/" + imageBack)} alt={albumName} />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

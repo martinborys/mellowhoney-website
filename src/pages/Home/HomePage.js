@@ -1,3 +1,7 @@
+import React from "react";
+import "./home.css";
+import background from "../../assets/battle2.jpg";
+
 export default function Home() {
-  return <h1>Home</h1>;
+  return <div className="homepage">Home</div>;
 }
