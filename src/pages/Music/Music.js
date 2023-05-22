@@ -1,11 +1,15 @@
-import FlippableCard from "./FlippableCard";
+import { AlbumProvider } from "../../context/AlbumContext";
+import AlbumCard from "./AlbumCard";
+import "./music.css";
 
 export default function Music() {
   return (
-    <FlippableCard
-      imageFront={"sbd-front.png"}
-      imageBack={"sbd-back.png"}
-      albumName={"Sentimental by Design"}
-    />
+    <AlbumProvider>
+      <div className="music">
+        <AlbumCard albumName={"Sentimental by Design"} />
+        <AlbumCard albumName={"Sentimental by Design"} />
+        <AlbumCard albumName={"Sentimental by Design"} />
+      </div>
+    </AlbumProvider>
   );
 }

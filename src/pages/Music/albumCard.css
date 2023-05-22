@@ -1,0 +1,15 @@
+.album-card {
+    margin: 1rem;
+}
+
+.album-card h3 {
+    margin-top: 1rem;
+}
+
+.detail {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: black;
+    background-color: transparent;
+}

@@ -1,5 +1,4 @@
 import "./home.css";
-import "../../assets/GamerBold.ttf";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 function Navbar() {
