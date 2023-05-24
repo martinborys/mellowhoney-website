@@ -1,3 +1,7 @@
+import { useAlbum } from "../context/AlbumContext";
+
 export default function AlbumDetails({ albumName }) {
-  return <div></div>;
+  const album = useAlbum();
+
+  return <div className="container">{album}</div>;
 }

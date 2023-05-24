@@ -1,6 +1,15 @@
-import React, { Children, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 
-const albumContext = React.createContext();
+const AlbumContext = React.createContext();
+const AlbumUpdateContext = React.createContext();
+
+export function useAlbum() {
+  return useContext(AlbumContext);
+}
+
+export function useAlbumUpdate() {
+  return useContext(AlbumUpdateContext);
+}
 
 export function AlbumProvider({ children }) {
   const [album, setAlbum] = useState("Sentimental by Design");
@@ -10,6 +19,10 @@ export function AlbumProvider({ children }) {
   }
 
   return (
-    <albumContext.Provider value={album}>{children}</albumContext.Provider>
+    <AlbumContext.Provider value={album}>
+      <AlbumUpdateContext.Provider value={changeAlbum}>
+        {children}
+      </AlbumUpdateContext.Provider>
+    </AlbumContext.Provider>
   );
 }
