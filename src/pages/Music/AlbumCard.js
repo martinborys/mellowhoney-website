@@ -22,8 +22,8 @@ export default function AlbumCard({ albumName }) {
     <div className="album-card" style={styles.customFont}>
       <button className="detail" onClick={setAlbum}>
         <FlippableCard
-          imageFront={album.imageFront}
-          imageBack={album.imageBack}
+          imageFront={album.frontCover}
+          imageBack={album.backCover}
         />
         <h3>
           <b>{albumName}</b>

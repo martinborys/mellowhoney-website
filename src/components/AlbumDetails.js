@@ -1,7 +1,15 @@
-import { useAlbum } from "../context/AlbumContext";
-
 export default function AlbumDetails({ albumName }) {
-  const album = useAlbum();
-
-  return <div className="container">{album}</div>;
+  return (
+    <div className="container">
+      <iframe
+        title={albumName}
+        src="https://bandcamp.com/EmbeddedPlayer/album=3661202216/size=large/bgcol=ffffff/linkcol=7137dc/tracklist=false/transparent=true/"
+        seamless
+      >
+        <a href="https://mellowhoney.bandcamp.com/album/sentimental-by-design">
+          Sentimental by Design by Mellow Honey
+        </a>
+      </iframe>
+    </div>
+  );
 }

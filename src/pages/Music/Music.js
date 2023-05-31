@@ -7,6 +7,8 @@ export default function Music() {
       <AlbumCard albumName={"Sentimental by Design"} />
       <AlbumCard albumName={"The Freeze"} />
       <AlbumCard albumName={"Sentimental by Design"} />
+      <AlbumCard albumName={"Sentimental by Design"} />
+      <AlbumCard albumName={"Sentimental by Design"} />
     </div>
   );
 }

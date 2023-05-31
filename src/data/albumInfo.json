@@ -1,17 +1,15 @@
 {
     "Sentimental by Design": {
-        "imageFront": "sbd-front.png",
-        "imageBack": "sbd-back.png",
+        "frontCover": "sbd-front.png",
+        "backCover": "sbd-back.png",
         "date": "10.29.2022",
         "styleClass": "sentimental-by-design"
     },
 
     "The Freeze": {
-        "imageFront": "sbd-front.png",
-        "imageBack": "sbd-back.png",
+        "frontCover": "sbd-front.png",
+        "backCover": "sbd-back.png",
         "date": "1.12.2019",
-        "color1": "",
-        "color2": "",
-        "color3": ""
+        "styleClass": "the-freeze"
     }
 }

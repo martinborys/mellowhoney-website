@@ -1,3 +1,9 @@
 .sentimental-by-design {
     color: #AC5FAE
 }
+
+.container iframe {
+    border: 0; 
+    width: 350px; 
+    height: 470px;
+}

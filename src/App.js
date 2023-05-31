@@ -14,7 +14,6 @@ function App() {
       <AlbumProvider>
         <Navbar />
         <div className="container">
-          <div className="spacer"></div> {/* Add a spacer div */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Music" element={<Music />} />

@@ -9,8 +9,6 @@ body {
 }
 
 .nav {
-  background-color: #333;
-  color: white;
   display: flex;
   justify-content: space-between;
 }

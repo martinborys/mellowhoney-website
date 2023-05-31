@@ -1,10 +1,6 @@
 .App {
-  /* === Content Alignment === */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.spacer {
-  height: 80px; /* Match the height to the navbar's height */
 }
