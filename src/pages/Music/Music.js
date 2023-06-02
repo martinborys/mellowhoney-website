@@ -22,7 +22,7 @@ export default function Music() {
     return contextAlbum === albumName;
   };
 
-  console.log("render");
+  console.log("CONTEXT", contextAlbum);
 
   return (
     <div className="music">
