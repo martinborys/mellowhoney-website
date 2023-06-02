@@ -1,5 +1,6 @@
 .album-card {
     margin: 1rem;
+    transition: opacity 0.5s;
 }
 
 .album-card h3 {
@@ -14,12 +15,19 @@
     background-color: transparent;
 }
 
-.unselected{
-    opacity: 0;
-    transition: opacity .5s linear;
-}
+
+.fade-out {
+    animation-name: fadeOutAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
   
-.selected{
-    opacity: 1;
-    transition: opacity .5s linear;
-}
+  @keyframes fadeOutAnimation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

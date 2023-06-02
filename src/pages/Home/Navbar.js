@@ -15,6 +15,7 @@ function Navbar() {
   const updateAlbum = useAlbumUpdate();
   useEffect(() => {
     updateAlbum("none");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   return (

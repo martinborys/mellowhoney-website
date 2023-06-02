@@ -12,7 +12,7 @@ export function useAlbumUpdate() {
 }
 
 export function AlbumProvider({ children }) {
-  const [album, setAlbum] = useState("none");
+  const [album, setAlbum] = useState("Sentimental by Design");
 
   function changeAlbum(newAlbum) {
     setAlbum(newAlbum);

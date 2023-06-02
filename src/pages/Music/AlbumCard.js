@@ -1,10 +1,29 @@
 import "./albumCard.css";
 import AlbumInfo from "../../data/albumInfo.json";
 import FlippableCard from "../../components/FlippableCard";
-import { useAlbumUpdate } from "../../context/AlbumContext";
+import { useState, useEffect } from "react";
 
-export default function AlbumCard({ albumName, active }) {
-  const album = AlbumInfo[albumName];
+export default function AlbumCard({ albumName, active, onClick }) {
+  const albumInfo = AlbumInfo[albumName];
+
+  const [rendered, setRendered] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+
+  const handleClick = () => {
+    onClick(albumName);
+  };
+
+  useEffect(() => {
+    if (!active) {
+      setFadeOut(true);
+    }
+  }, [active]);
+
+  const handleAnimationEnd = () => {
+    if (!active && fadeOut) {
+      setRendered(false);
+    }
+  };
 
   const styles = {
     customFont: {
@@ -12,30 +31,26 @@ export default function AlbumCard({ albumName, active }) {
     },
   };
 
-  const updateAlbum = useAlbumUpdate();
-
-  function handleClick() {}
-
-  function setAlbum() {
-    updateAlbum(albumName);
+  if (rendered) {
+    return (
+      <div
+        className={`album-card ${fadeOut ? "fade-out" : ""}`}
+        style={styles.customFont}
+        onAnimationEnd={handleAnimationEnd}
+      >
+        <button className="detail" onClick={handleClick}>
+          <div>
+            <FlippableCard
+              imageFront={albumInfo.frontCover}
+              imageBack={albumInfo.backCover}
+            />
+            <h3>
+              <b>{albumName}</b>
+            </h3>
+            <h5>{albumInfo.date}</h5>
+          </div>
+        </button>
+      </div>
+    );
   }
-
-  console.log(albumName, "active?:", active);
-
-  return (
-    <div className="album-card" style={styles.customFont}>
-      <button className="detail" onClick={setAlbum}>
-        <div className={active ? "selected" : "unselected"}>
-          <FlippableCard
-            imageFront={album.frontCover}
-            imageBack={album.backCover}
-          />
-          <h3>
-            <b>{albumName}</b>
-          </h3>
-          <h5>{album.date}</h5>
-        </div>
-      </button>
-    </div>
-  );
 }
