@@ -1,4 +1,4 @@
-export default function AlbumDetails({ albumName }) {
+export default function AlbumPlayer({ albumName }) {
   return (
     <div className="container">
       <iframe

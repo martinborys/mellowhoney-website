@@ -11,5 +11,12 @@
         "backCover": "sbd-back.png",
         "date": "1.12.2019",
         "styleClass": "the-freeze"
+    },
+
+    "The Mellow Honey EP": {
+        "frontCover": "sbd-front.png",
+        "backCover": "sbd-back.png",
+        "date": "1.12.2019",
+        "styleClass": "the-freeze"
     }
 }

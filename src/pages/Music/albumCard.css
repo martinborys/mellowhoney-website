@@ -13,3 +13,13 @@
     color: black;
     background-color: transparent;
 }
+
+.unselected{
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+  
+.selected{
+    opacity: 1;
+    transition: opacity .5s linear;
+}
