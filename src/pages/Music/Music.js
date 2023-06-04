@@ -12,7 +12,7 @@ export default function Music() {
   };
 
   return (
-    <div className="music">
+    <div className={`music ${activeAlbum ? "album-active" : ""}`}>
       {getKeys(albumInfo).map((albumName, i) => (
         <AlbumCard
           key={i}
