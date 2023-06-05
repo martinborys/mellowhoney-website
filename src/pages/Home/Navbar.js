@@ -1,7 +1,5 @@
-import { useAlbumUpdate } from "../../context/AlbumContext";
 import "./home.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function Navbar() {
@@ -10,13 +8,6 @@ function Navbar() {
       fontFamily: "GamerBold",
     },
   };
-
-  const location = useLocation().pathname;
-  const updateAlbum = useAlbumUpdate();
-  useEffect(() => {
-    updateAlbum("none");
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [location]);
 
   return (
     <nav className="nav" style={styles.customFont}>
