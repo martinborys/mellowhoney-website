@@ -2,3 +2,15 @@
     display: flex;
     justify-content: space-around;
 }
+
+.product-container {
+    box-shadow: 0 6px 0 0px #000;
+    border: 3px solid #000;
+    margin: 1rem
+}
+
+.product-details {
+    padding: 1.2rem;
+    text-align: center;
+    display: block;
+}
