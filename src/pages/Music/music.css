@@ -1,20 +1,26 @@
-.music {
+* {
+    box-sizing: border-box;
+}
+
+ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     justify-content: space-evenly;
-    transition: justify-content 1s ease-in-out;
+    list-style: none;
 }
 
-.music.album-active {
-    justify-content: flex-start;
+.fadeable {
+    transition-property: all;
+    transition-duration: 1s;
+    opacity: 1;
 }
 
-@keyframes slideIn {
-    0% {
-        justify-content: space-evenly;
-    }
-    100% {
-        justify-content: flex-start;
-    }
-}
+.backdrop {
+    background-image: url(../../assets/noirlac3.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }

@@ -1,6 +1,5 @@
-import "./home.css";
+import "../pages/Home/home.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 
 function Navbar() {
   const styles = {
@@ -12,13 +11,13 @@ function Navbar() {
   return (
     <nav className="nav" style={styles.customFont}>
       <Link to="/" className="site-title">
-        Mellow Honey
+        MELLOW HONEY
       </Link>
       <ul>
         <CustomLink to="/Music">Music</CustomLink>
         <CustomLink to="/Merch">Merch</CustomLink>
         <CustomLink to="/Photos">Photos</CustomLink>
-        <CustomLink to="/Concerts">Concerts</CustomLink>
+        <CustomLink to="/Shows">Shows</CustomLink>
       </ul>
     </nav>
   );

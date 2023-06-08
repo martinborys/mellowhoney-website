@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Sunset Bear Shirt",
+        "category": "shirt",
+        "priceInCents": 1500,
+        "imageFile": {
+            "front": "",
+            "back": ""
+        }
+    },
+    {
+        "name": "Tie Dye Record Player Shirt",
+        "category": "shirt",
+        "priceInCents": 2000,
+        "imageFile": {
+            "front": "",
+            "back": ""
+        }
+    },
+    {
+        "name": "Black Record Player Shirt",
+        "category": "shirt",
+        "priceInCents": 1500,
+        "imageFile": {
+            "front": "",
+            "back": ""
+        }
+    },
+    {
+        "name": "Sentimental by Design Shirt",
+        "category": "shirt",
+        "priceInCents": 2000,
+        "imageFile": {
+            "front": "",
+            "back": ""
+        }
+    },
+    {
+        "name": "Psychonaut Sticker",
+        "category": "sticker",
+        "priceInCents": 200,
+        "imageFile": {
+            "front": "sbd-sticker.png"
+        }
+    }
+]

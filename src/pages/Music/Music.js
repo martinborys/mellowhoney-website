@@ -3,6 +3,7 @@ import "./music.css";
 import albumInfo from "../../data/albumInfo.json";
 import { getKeys } from "../../utils/utils";
 import { useState } from "react";
+import Navbar from "../../components/Navbar";
 
 export default function Music() {
   const [activeAlbum, setActiveAlbum] = useState(null);
@@ -12,15 +13,19 @@ export default function Music() {
   };
 
   return (
-    <div className={`music ${activeAlbum ? "album-active" : ""}`}>
-      {getKeys(albumInfo).map((albumName, i) => (
-        <AlbumCard
-          key={i}
-          albumName={albumName}
-          active={activeAlbum === albumName || !activeAlbum}
-          onClick={handleAlbumClick}
-        />
-      ))}
+    <div className="backdrop">
+      <Navbar />
+      <ul>
+        {getKeys(albumInfo).map((albumName, i) => (
+          <AlbumCard
+            key={i}
+            albumName={albumName}
+            active={activeAlbum === albumName || !activeAlbum}
+            onClick={handleAlbumClick}
+            className={"fadeable"}
+          />
+        ))}
+      </ul>
     </div>
   );
 }

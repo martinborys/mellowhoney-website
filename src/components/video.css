@@ -1,0 +1,10 @@
+.flex-container {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+iframe {
+    border: 3px solid #E3BF65;
+}
