@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8dfbe6a2.css",
+    "main.js": "/static/js/main.e811509c.js",
+    "static/js/787.90938d66.chunk.js": "/static/js/787.90938d66.chunk.js",
+    "static/media/battle2.jpg": "/static/media/battle2.35aebcf6300e1ace3f83.jpg",
+    "static/media/sbd-front.png": "/static/media/sbd-front.50e1ffcb46857241c97d.png",
+    "static/media/sbd-back.png": "/static/media/sbd-back.5d231f92f3ad17b1aa0f.png",
+    "static/media/vz1+AI.gif": "/static/media/vz1+AI.99c23414865d6c918d6c.gif",
+    "static/media/fire-pixel.gif": "/static/media/fire-pixel.502e6f8f6c568c4fcd89.gif",
+    "static/media/battle.jpeg": "/static/media/battle.5f94ad89abcf33b611b7.jpeg",
+    "static/media/sbd-sticker.png": "/static/media/sbd-sticker.9c1d6b1981916995dc51.png",
+    "static/media/tata.jpg": "/static/media/tata.51f27a189d768a94e927.jpg",
+    "static/media/206Ani.gif": "/static/media/206Ani.48c753d6999d37a6ea66.gif",
+    "static/media/daniel-hernandez-bearctos.jpg": "/static/media/daniel-hernandez-bearctos.7a66f5fc250c439e2a4a.jpg",
+    "static/media/noirlac3.gif": "/static/media/noirlac3.438caf3e5be844f49588.gif",
+    "static/media/GamerBold.ttf": "/static/media/GamerBold.e88b868de3d000e11f49.ttf",
+    "index.html": "/index.html",
+    "main.8dfbe6a2.css.map": "/static/css/main.8dfbe6a2.css.map",
+    "main.e811509c.js.map": "/static/js/main.e811509c.js.map",
+    "787.90938d66.chunk.js.map": "/static/js/787.90938d66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dfbe6a2.css",
+    "static/js/main.e811509c.js"
+  ]
+}
