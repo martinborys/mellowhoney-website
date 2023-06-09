@@ -1,8 +1,8 @@
 import "./merch.css";
 
-export default function Listing({ product }) {
+export default function Listing({ product, handleClick }) {
   return (
-    <div className="product-container">
+    <div className="product-container" onClick={handleClick}>
       <img
         src={`../../assets/${product.imageFile.front}`}
         alt={product.imageFile.front}
